@@ -1,0 +1,3 @@
+2019-04-14  17:56:52.745 [restartedMain] WARN  tk.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.leroy.wxmin]' package. Please check your configuration.
+2019-04-14  17:56:52.752 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.leroy.wxmin]' package. Please check your configuration.
+2019-04-14  17:56:55.393 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.

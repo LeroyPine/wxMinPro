@@ -1,0 +1,80 @@
+#开发环境
+server:
+  port: 8899
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/home_electric?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+  #  url: jdbc:mysql://localhost:3306/mydata?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+  mvc:
+      throw-exception-if-no-handler-found: true
+      static-path-pattern: /**
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+  devtools:
+    restart:
+      enabled: true
+  servlet:
+      multipart:
+        maxFileSize: 30Mb
+        maxRequestSize: 100Mb
+
+  mapper:
+    identity: MYSQL
+    not-empty: false
+    # 是否仅处理简单类型(基本数据类型+包装类),  如果为true 表示忽略model中的复杂类型
+    use-simple-type: true
+    # 为true 表示将枚举作为简单类型处理
+    enum-as-simple-type: true
+  mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.leroy.wxmin.model
+
+  pagehelper:
+    helperDialect: mysql
+    pageSizeZero: true
+    params: count=countSql
+    reasonable: false
+    supportMethodsArguments: true
+
+  thymeleaf:
+    cache: false #开发时关闭缓存,不然没法看到实时页面
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    servlet:
+      content-type: text/html
+debug: true
+logging:
+  path: classpath:/logback.xml
+  level:
+    com:
+      leroy:
+        wxmin:
+           dao: debug
+
+file:
+  staticAccessPath : /upload/**
+  uploadFolder : D://upload/
+  url: /upload/
+
+wpost: ${server.port}
+
+pagehelper :
+  offsetAsPageNum : true
+  rowBoundsWithCount: true
+  pageSizeZero : true
+  reasonable : false
+  params : pageNum=pageHelperStart;pageSize=pageHelperRows;
+  supportMethodsArguments : false
+
+openid: o0yVZ5BbIFAUMpf7agF7XaMA6Fjk

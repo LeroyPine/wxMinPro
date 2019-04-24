@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主要内容</title>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function dis(){
+            $("#addShop").css('display','block');
+        }
+        function dis1(){
+            $("#addShop").css('display','none');
+        }
+        function gosubmit(){
+            var formdata=new FormData();
+            formdata.append('fileData',$('#uploadImage').get(0).files[0]);
+            $.ajax({
+                url:'/repair/shop/upload',
+                type:'post',
+                data:formdata,
+                contentType:false,
+                data:formdata,
+                processData:false,
+                success:function(info){
+                    console.log(info)
+                    $('.backimg').attr('src',JSON.parse(info).file_path);
+                    $('#photo').val(JSON.parse(info).file_path)
+                },
+                error:function(err){
+                    console.log(err)
+                }
+            });
+        }
+        function updateState(id) {
+            window.location.href = "/repair/shop/findRepairById?id="+id
+        }
+        function delState(id) {
+            window.location.href = "/repair/shop/delete?id="+id
+        }
+    </script>
+    <style type="text/css">
+        .shop{
+            height: 500px;
+            width: 600px;
+            z-index: 100;
+            position:absolute;
+            top:40%;
+            left:30%;
+            margin:-200px 0 0 -200px;
+            border:1px solid black;
+            background-color: gray;
+        }
+
+        .font{
+            font-size: 16px;
+            color: black;
+        }
+        .shopinput{
+
+            height: 30px;
+            width: 200px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="col-sm-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            搜索
+        </div>
+        <div class="panel-body">
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                    <button type="button" onclick="javascript:location.href='/repair/shop/listForadmin'" class="btn btn-default">查询维修店铺</button>
+                    <button type="button" onclick="dis()" class="btn btn-default">添加维修店铺</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table table-striped ">
+            <thead>
+            <tr>
+                <th>维修店名称</th>
+                <th>维修店图片</th>
+                <th>维修店地址</th>
+                <th>维修店铺浏览量</th>
+                <th>维修店描述</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="repairShop:${repairShopList}">
+                <td><span th:text="${repairShop.name}"></span></td>
+                <td>
+                    <span style="display: none" th:style="'display:' + @{(${repairShop.photo ==null} ? 'none' : 'inline-block')} + ''">
+                        <img th:src="${repairShop.photo}" height="50px" width="50px"> </span></td>
+                <td><span th:text="${repairShop.address}"></span> </td>
+                <td><span th:text="${repairShop.browerNum}"></span> </td>
+                <td><span th:text="${repairShop.description}"></span> </td>
+                <td>
+                    <a href="javascript:void(0)" th:onclick="|javascript:updateState('${repairShop.id}')|">
+                        <span th:text = "${repairShop.name !=null}?'修改':''"></span>
+                    </a>
+                    <a href="javascript:void(0)" th:onclick="|javascript:delState('${repairShop.id}')|">
+                        <span th:text = "${repairShop.name !=null}?'删除':''"></span>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="shop" id="addShop" style="display:none;">
+    <form  method="post" id="imgform" enctype="multipart/form-data" action="">
+        <span class="font">维修店铺图片上传:</span><br>
+        <img src="" alt="" class="backimg" height="100px" width="100px">
+        <br>
+        <input type="file" name="uploadImage" class="btn btn-default" id="uploadImage">
+        <input type="button" onclick="gosubmit()"  class="btn btn-default" value="上传" />
+    </form>
+  <form action="/repair/shop/add" method="post">
+    <span class="font">维修店铺名称:</span> <input class="shopinput" type="text" name="name"><br>
+    <span class="font">维修店铺介绍:</span><input class="shopinput"  type="text" name="description"><br>
+    <span class="font">维修店铺地址:</span><input  class="shopinput"  type="text" name="address"><br>
+    <span class="font">维修店铺图片:</span><input  class="shopinput" id="photo" type="text" name="photo"><br>
+      <br>
+    <input type="submit" class="btn btn-default" value="提交">
+      <input type="button" class="btn btn-default" onclick="dis1()" value="取消">
+
+  </form>
+
+</div>
+
+</body>
+</html>

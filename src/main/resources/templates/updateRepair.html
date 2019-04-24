@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主要内容</title>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function gosubmit(){
+            var formdata=new FormData();
+            formdata.append('fileData',$('#uploadImage').get(0).files[0]);
+            $.ajax({
+                url:'/repair/shop/upload',
+                type:'post',
+                data:formdata,
+                contentType:false,
+                data:formdata,
+                processData:false,
+                success:function(info){
+                    console.log(info)
+                    $('.backimg').attr('src',JSON.parse(info).file_path);
+                    $('#photo').val(JSON.parse(info).file_path)
+                },
+                error:function(err){
+                    console.log(err)
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="col-sm-10">
+
+    <form  method="post" id="imgform" enctype="multipart/form-data" action="">
+        <span class="font">维修店铺图片修改:</span><br>
+        <img src="" alt="" class="backimg" height="100px" width="100px">
+        <br>
+        <input type="file" name="uploadImage" class="btn btn-default" id="uploadImage">
+        <input type="button" onclick="gosubmit()"  class="btn btn-default" value="上传" />
+    </form>
+    <hr>
+   <form action="/repair/shop/update" method="get">
+       <input type="hidden" name = "id" th:value="${repairShop.id}">
+    维修店铺名称:<input type="text" name = "name" th:value="${repairShop.name}"> <br><br>
+    维修店铺介绍:<input type="text" name = "description" th:value="${repairShop.description}"> <br><br>
+    维修店铺地址:<input type="text" name = "address" th:value = "${repairShop.address}"> <br><br>
+    维修店铺图片:<img th:src="${repairShop.photo}" height="50px" width="50px">
+    <input type="hidden" name = "photo" id="photo" th:value ="${repairShop.photo}">
+       <input type="submit" value="修改">
+   </form>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.leroy.wxmin.dao.CommentMapper">
+  <resultMap id="BaseResultMap" type="com.leroy.wxmin.model.Comment">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="shopId" jdbcType="INTEGER" property="shopid" />
+    <result column="comment" jdbcType="VARCHAR" property="comment" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+
+
+  <select id="selectCommentList" resultMap="BaseResultMap">
+
+    select  id,comment,username,create_date  from comment inner join  repair_shop on   comment.shopId = repair_shop.id
+    where repair_shop.id = #{shopId}
+
+  </select>
+</mapper>

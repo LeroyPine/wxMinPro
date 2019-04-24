@@ -1,0 +1,135 @@
+2019-04-13  00:02:14.264 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:02:14.274 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:02:14.274 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:02:14.276 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:02:14.278 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:02:53.313 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:02:53.314 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:02:53.315 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:02:53.317 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:02:53.318 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:03:47.800 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:03:47.801 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:03:47.801 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:03:47.803 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:03:47.805 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:05:20.387 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:05:20.394 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:05:20.394 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:05:20.396 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:05:20.398 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:05:57.222 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:05:57.224 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:05:57.224 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:05:57.226 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:05:57.227 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:06:22.865 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:06:22.866 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:06:22.866 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:06:22.868 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:06:22.869 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:11:35.016 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:11:35.020 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:11:35.020 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:11:35.021 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:11:35.023 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:11.264 [http-nio-8899-exec-5] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:11.265 [http-nio-8899-exec-5] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:12:11.266 [http-nio-8899-exec-5] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:12:11.267 [http-nio-8899-exec-5] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:12:11.268 [http-nio-8899-exec-5] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:19.635 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:19.636 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:12:19.636 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:12:19.638 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:12:19.639 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:29.894 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:29.895 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:12:29.896 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:12:29.897 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:12:29.899 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:38.366 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:38.368 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:12:38.368 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:12:38.369 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:12:38.370 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:50.294 [http-nio-8899-exec-6] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:12:50.296 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:12:50.296 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:12:50.297 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:12:50.299 [http-nio-8899-exec-6] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:13:02.325 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:13:02.327 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:13:02.328 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:13:02.329 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:13:02.331 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:13:40.234 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:13:40.235 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:13:40.236 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:13:40.237 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:13:40.239 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:03.619 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:03.621 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:14:03.622 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:14:03.625 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:14:03.629 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:18.340 [http-nio-8899-exec-10] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:18.342 [http-nio-8899-exec-10] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:14:18.342 [http-nio-8899-exec-10] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:14:18.343 [http-nio-8899-exec-10] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:14:18.344 [http-nio-8899-exec-10] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:55.832 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:14:55.833 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:14:55.833 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:14:55.835 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:14:55.836 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:19:14.366 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:19:14.372 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:19:14.372 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:19:14.374 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:19:14.375 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:04.045 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:04.046 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:20:04.047 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:20:04.048 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:20:04.050 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:31.061 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:31.062 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:20:31.063 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:20:31.064 [http-nio-8899-exec-4] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:20:31.066 [http-nio-8899-exec-4] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:57.235 [http-nio-8899-exec-6] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:20:57.236 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:20:57.236 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:20:57.237 [http-nio-8899-exec-6] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:20:57.238 [http-nio-8899-exec-6] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:21:43.028 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:21:43.033 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==>  Preparing: select appointment.id,repair_shop.name repairName,electric_name electName,electric_age age,electric_pheno pheno, (case state when '10' then '审核中' when '15' then '预约成功' when '20'then '预约失败' end) state,repair_shop.id shopId from appointment left join repair_shop on repair_shop_id = repair_shop.id where username like concat('%',?,'%') 
+2019-04-13  00:21:43.034 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==> Parameters: Leroy(String)
+2019-04-13  00:21:43.053 [http-nio-8899-exec-7] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - <==      Total: 3
+2019-04-13  00:21:43.070 [http-nio-8899-exec-7] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:21:44.574 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:21:44.575 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==>  Preparing: select appointment.id,repair_shop.name repairName,electric_name electName,electric_age age,electric_pheno pheno, (case state when '10' then '审核中' when '15' then '预约成功' when '20'then '预约失败' end) state,repair_shop.id shopId from appointment left join repair_shop on repair_shop_id = repair_shop.id where username like concat('%',?,'%') 
+2019-04-13  00:21:44.575 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==> Parameters: Leroy(String)
+2019-04-13  00:21:44.577 [http-nio-8899-exec-8] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - <==      Total: 3
+2019-04-13  00:21:44.578 [http-nio-8899-exec-8] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:22:25.881 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:22:25.882 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:22:25.882 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:22:25.883 [http-nio-8899-exec-9] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:22:25.884 [http-nio-8899-exec-9] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:24:05.801 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:24:05.806 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==>  Preparing: SELECT id,open_id,nick_name,avatar_url,province,city FROM user_info 
+2019-04-13  00:24:05.806 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - ==> Parameters: 
+2019-04-13  00:24:05.807 [http-nio-8899-exec-1] DEBUG com.leroy.wxmin.dao.UserInfoMapper.selectByExample - <==      Total: 1
+2019-04-13  00:24:05.809 [http-nio-8899-exec-1] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:25:57.716 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:25:57.722 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==>  Preparing: select appointment.id,repair_shop.name repairName,electric_name electName,electric_age age,electric_pheno pheno, (case state when '10' then '审核中' when '15' then '预约成功' when '20'then '预约失败' end) state,repair_shop.id shopId from appointment left join repair_shop on repair_shop_id = repair_shop.id where username like concat('%',?,'%') 
+2019-04-13  00:25:57.722 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==> Parameters: Leroy(String)
+2019-04-13  00:25:57.725 [http-nio-8899-exec-3] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - <==      Total: 3
+2019-04-13  00:25:57.726 [http-nio-8899-exec-3] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:25:58.485 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@53614465
+2019-04-13  00:25:58.486 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==>  Preparing: select appointment.id,repair_shop.name repairName,electric_name electName,electric_age age,electric_pheno pheno, (case state when '10' then '审核中' when '15' then '预约成功' when '20'then '预约失败' end) state,repair_shop.id shopId from appointment left join repair_shop on repair_shop_id = repair_shop.id where username like concat('%',?,'%') 
+2019-04-13  00:25:58.486 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - ==> Parameters: Leroy(String)
+2019-04-13  00:25:58.487 [http-nio-8899-exec-2] DEBUG com.leroy.wxmin.dao.AppointmentMapper.selectByuserName - <==      Total: 3
+2019-04-13  00:25:58.489 [http-nio-8899-exec-2] DEBUG org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@53614465

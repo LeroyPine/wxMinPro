@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主要内容</title>
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        function updateState(state,appid) {
+                var result = confirm("确认通过该维修单?");
+                if (result){
+                    $.ajax({
+                        url:"/appointment/updateState?appointId="+appid+"&state="+state,
+                        success: function(data){
+                            if(data == "suc"){
+                                document.getElementById(""+appid+"").innerHTML= "预约成功";
+                            }else{
+                                document.getElementById(""+appid+"").innerHTML= "预约失败";
+                            }
+                        }
+
+                    })
+                }
+
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="col-sm-10">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            搜索
+        </div>
+        <div class="panel-body">
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                <button type="button" onclick="javascript:location.href='/appointment/listForAdmin'" class="btn btn-default">查询预约单</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table table-striped ">
+            <thead>
+            <tr>
+                <th>维修店名称</th>
+                <th>家电名称</th>
+                <th>故障原因</th>
+                <th>使用年限</th>
+                <th>申&nbsp;请&nbsp;人</th>
+                <th>审核状态</th>
+                <th>审批操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="appoint:${appointmentData}">
+                <td><span th:text="${appoint.repairName}"></span></td>
+                <td><span th:text="${appoint.electName}"></span> </td>
+                <td><span th:text="${appoint.pheno}"></span> </td>
+                <td><span th:text="${appoint.age}"></span> </td>
+                <td><span th:text="${appoint.username}"></span> </td>
+                <td><span th:id="${appoint.id}" th:text="${appoint.state}"></span> </td>
+                <td>
+                    <a href="javascript:void(0)" th:onclick="|javascript:updateState(1,'${appoint.id}')|"><span th:text = "${appoint.id !=null}?'通过':''"></span></a>
+                    <a href="javascript:void(0)" th:onclick="|javascript:updateState(0,'${appoint.id}')|"><span th:text = "${appoint.id !=null}?'拒绝':''"></span></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>家电维修管理系统</title>
+
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var menuClick = function(menuUrl) {
+            $("#mainFrame").attr("src",menuUrl);
+        }
+    </script>
+
+    <script th:inline="javascript">
+        var username = [[${name}]];
+        localStorage.setItem("adminUserName",username)
+    </script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">家电维修管理系统</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>欢迎您,<span id="adminname" th:text="${name}"></span>管理员</a>
+                </li>
+                <li><a href="/login.html">安全退出</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="#" class="list-group-item active">Admin</a>
+            <a href="#" onclick="menuClick('/content.html')" class="list-group-item">
+                <img src="/images/student.png" height="25px">维修单管理</a>
+            <a href="#" onclick="menuClick('/repairShopList.html')" class="list-group-item">
+                <img src="/images/student.png" height="25px">维修店管理</a>
+        </div>
+        <div class="col-sm-10">
+            <div class="modal-body">
+                <iframe src="/index.html" th:src="@{/index.html}" id="mainFrame" name="mainFrame"  width="100%"  height="700px" frameBorder="0"></iframe>
+            </div>
+               <div class="footer">
+                   <p class="text-center">
+                       2019 &copy; Leroy.
+                   </p>
+               </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
